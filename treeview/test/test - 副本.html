@@ -1,0 +1,106 @@
+<head>
+<!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+<title>Insert title here</title>
+    <link rel="stylesheet" href="css/jquery.treeview.css" type="text/css"/>
+    <!--screen.css不要也可以-->
+    <link rel="stylesheet" href="css/screen.css" type="text/css"/>
+
+    <script src="js/jquery.min.js"></script>
+    <!--jquery.cookie.js不要也可以-->
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/jquery.treeview.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#treeview").treeview({
+            toggle: function() {
+                console.log("%s was toggled.", $(this).find(">span").text());
+            }
+        });
+    });
+</script>
+</head>
+<div id="main">
+<ul id="treeview" class="filetree">
+</li>
+    <li><span class='folder'>.lstripped</span></li>
+    <li><span class='folder'>usr</span><ul>
+        <li><span class='folder'>bin</span><ul>
+            <li><span class='folder'>lxc-ls</span></li>
+            <li><span class='folder'>syslogd_ex</span></li>
+            <li><span class='folder'>lxc-cgroup</span></li>
+            <li><span class='folder'>dbus-run-session</span></li>
+            <li><span class='folder'>lxc-freeze</span></li>
+            <li><span class='folder'>lxc-wait</span></li>
+            <li><span class='folder'>voip_helper</span></li>
+            <li><span class='folder'>lxc-monitor</span></li>
+            <li><span class='folder'>lxc-console</span></li>
+            <li><span class='folder'>lxc-config</span></li>
+            <li><span class='folder'>klogd_ex</span></li>
+            <li><span class='folder'>lxc-usernsexec</span></li>
+            <li><span class='folder'>dbus-launch</span></li>
+            <li><span class='folder'>lxc-autostart</span></li>
+            <li><span class='folder'>lxc-execute</span></li>
+            <li><span class='folder'>lxc-snapshot</span></li>
+            <li><span class='folder'>voipmp</span></li>
+            <li><span class='folder'>syscmd</span></li>
+            <li><span class='folder'>voice.rc</span></li>
+            <li><span class='folder'>lxc-create</span></li>
+            <li><span class='folder'>lxc-checkconfig</span></li>
+            <li><span class='folder'>lxc-attach</span></li>
+            <li><span class='folder'>lxc-destroy</span></li>
+            <li><span class='folder'>dbus-uuidgen</span></li>
+            <li><span class='folder'>Mgmt</span></li>
+            <li><span class='folder'>Monitor</span></li>
+            <li><span class='folder'>lxc-start</span></li>
+            <li><span class='folder'>lxc-unfreeze</span></li>
+            <li><span class='folder'>lxc-clone</span></li>
+            <li><span class='folder'>lxc-stop</span></li>
+            <li><span class='folder'>lxc-unshare</span></li>
+            <li><span class='folder'>dbus-cleanup-sockets</span></li>
+            <li><span class='folder'>lxc-info</span></li>
+            <li><span class='folder'>dbus-launch.real</span></li>
+            <li><span class='folder'>dbus-send</span></li>
+            <li><span class='folder'>dbus-monitor</span></ul>
+        <li><span class='folder'>lib</span><ul>
+            <li><span class='folder'>glib-2.0</span><ul>
+                <li><span class='folder'>libgio-2.0.so.0.4101.0</span></li>
+                <li><span class='folder'>libgobject-2.0.so.0.4101.0</span></li>
+                <li><span class='folder'>libgmodule-2.0.so.0.4101.0</span></li>
+                <li><span class='folder'>libgthread-2.0.so.0.4101.0</span></li>
+                <li><span class='folder'>libglib-2.0.so.0.4101.0</span></ul>
+            <li><span class='folder'>lxc</span><ul>
+                <li><span class='folder'>rootfs</span><ul>
+                    <li><span class='folder'>README</span></ul>
+            <li><span class='folder'>liblxc.so.1.0.8</span></li>
+            <li><span class='folder'>libcap.so.2.24</span></ul>
+        <li><span class='folder'>sbin</span><ul>
+            <li><span class='folder'>dbus-daemon</span></li>
+            <li><span class='folder'>mgapp</span></li>
+            <li><span class='folder'>trigger</span></li>
+            <li><span class='folder'>init.lxc</span></li>
+            <li><span class='folder'>saf</span></li>
+            <li><span class='folder'>gdbus</span></li>
+            <li><span class='folder'>sipclient</span></ul>
+        <li><span class='folder'>include</span><ul>
+            <li><span class='folder'>lxc</span><ul>
+                <li><span class='folder'>attach_options.h</span></li>
+                <li><span class='folder'>version.h</span></li>
+                <li><span class='folder'>lxccontainer.h</span></ul>
+            <li><span class='folder'>sys</span><ul>
+                <li><span class='folder'>capability.h</span></ul>
+        <li><span class='folder'>libexec</span><ul>
+            <li><span class='folder'>lxc</span><ul>
+                <li><span class='folder'>lxc-monitord</span></li>
+                <li><span class='folder'>lxc-user-nic</span></ul>
+        <li><span class='folder'>etc</span><ul>
+            <li><span class='folder'>lxc</span><ul>
+                <li><span class='folder'>default.conf</span></ul>
+        <li><span class='folder'>share</span><ul>
+            <li><span class='folder'>lxc</span><ul>
+                <li><span class='folder'>lxc.functions</span></li>
+                <li><span class='folder'>templates</span><ul>
+                    <li><span class='folder'>lxc-busybox</span></ul>
+        <li><span class='folder'>local</span></ul>
+    <li><span class='folder'>userfs</span></ul>
+</div>
